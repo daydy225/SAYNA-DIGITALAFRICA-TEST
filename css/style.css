@@ -1,0 +1,136 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-color: #e5e5e5;
+    font-size: var(--fs-texte);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+===================
+CSS VARIABLES
+===================
+ */
+
+:root {
+    --h1-font: 'Far From Homecoming', sans-serif;
+    
+    --red: #B11313;
+    --yellow: #F1C530;
+    --blue: #114C92;
+    --dark: #000;
+    --white: #fff;
+
+
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-medium: 500;
+    --fw-regular: 400
+
+
+    --fs-h1: 32px; 
+    --fs-h2: 20px; 
+    --fs-h3: 20px;
+    --fs-soustitre: 16px;
+    --fs-texte: 14px;  
+}
+ 
+
+/* 
+=========
+HEADER
+=========
+ */
+
+header {
+    width: 100%;
+}
+
+/* 
+============
+NAVBAR
+============
+ */
+
+.navbar {
+    background-color: var(--red);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+}
+
+.navbar .logo {
+   display: flex;
+   align-items: center;
+}
+
+
+.logo1 {
+  width: 13%;
+}
+.logo3
+ {
+    width: min(140px, 100%);
+}
+
+.navbar .logo > *:not(:last-child) {
+  margin-right: 14px;
+}
+
+.navbar .nav-menu {
+    display: none;
+}
+
+.navbar .nav-menu > li:last-child {
+    font-weight: var(--fw-bold);
+}
+
+.navbar .menu-icon {
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.navbar .menu-icon i {
+    font-size: var(--fs-h2);
+}
+
+/*
+====================
+NAVBAR MEDIA QUERIES
+====================
+ */
+
+ @media (min-width:600px) {
+    .navbar {
+        padding-inline: 50px;
+    }
+    .navbar .nav-menu {
+        display: flex;
+    }
+
+    .navbar .logo {
+        margin-left: 30px;
+    }
+    
+    .navbar .logo > *:not(:last-child) {
+        margin-right: 24px;
+      }
+
+
+   
+    .navbar .nav-menu > *:not(last-child) {
+        margin-right: 40px;
+    }
+
+    .navbar .menu-icon {
+        display: none;
+    }
+ }
