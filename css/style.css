@@ -318,6 +318,7 @@ section.section-spider-form {
   position: relative;
   background-color: var(--blue);
   height: 100%;
+  padding-block: 1em;
   /* max-width: 100%; */
 }
 
@@ -328,21 +329,19 @@ section.section-spider-form .spider-bg {
 }
 section.section-spider-form .spider-form__group {
   position: absolute;
-  /* z-index: 4; */
-  top: 6em;
-  right: 5em;
-  left: 5em;
+  right: 4em;
+  left: 4em;
 }
 
 .spider-form__title {
   font-family: var(--h1-font);
-  font-size: var(--fs-h2);
+  font-size: var(--fs-soustitre);
   text-align: center;
   text-transform: uppercase;
 }
 
 .spider-form___subtitle {
-  font-size: 8px;
+  font-size: 7.5px;
   text-align: center;
   margin-block: 1.5em;
 }
@@ -351,7 +350,7 @@ section.section-spider-form .spider--form {
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding-block: 1em;
+  padding-block: 0.5em;
 }
 
 .spider--form .input-bar {
@@ -373,20 +372,21 @@ section.section-spider-form .spider--form {
   outline: 0;
   border: 0;
   text-indent: 0.6em;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: var(--fw-bold);
 }
 
 .btn--form {
   background-color: transparent;
   font-size: var(--fs-texte);
-  padding: 0.6em 2.5em;
+  padding: 0.5em 2.5em;
   color: var(--white);
   border: 1px solid #fff;
   border-radius: 1.8em;
   cursor: pointer;
   outline: none;
-  margin-left: 6em;
+  /* margin-left: 1.5em; */
+  margin-right: 3em;
 }
 
 /* 
@@ -395,3 +395,25 @@ SECTION SPIDER FORM
 MEDIA QUERIES
 ==================
 */
+
+@media (min-width: 375px) {
+  section.section-spider-form .spider-form__group {
+    top: 7em;
+  }
+
+  .spider-form___subtitle {
+    font-size: 8px;
+  }
+
+  .spider--form .spider--input {
+    font-size: 12px;
+  }
+
+  .btn--form {
+    margin-left: 6.5em;
+  }
+}
+
+/* @media (min-width:600px) {
+    
+} */
