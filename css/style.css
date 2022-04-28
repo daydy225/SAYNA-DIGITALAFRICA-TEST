@@ -323,9 +323,18 @@ section.section-spider-form {
 }
 
 section.section-spider-form .spider-bg {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+section.section-spider-form .spider-form__group {
+  position: absolute;
+  z-index: 4;
+  top: 7em;
+  right: 5em;
+  left: 5em;
 }
 
 .spider-form__title {
@@ -336,30 +345,22 @@ section.section-spider-form .spider-bg {
 }
 
 .spider-form___subtitle {
-  font-size: 10px;
+  font-size: 9px;
   text-align: center;
   margin-block: 1.5em;
-}
-
-section.section-spider-form .spider-form__group {
-  position: absolute;
-
-  top: 1em;
 }
 
 section.section-spider-form .spider--form {
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: center;
   padding-block: 1em;
-  /* padding-inline: 4em; */
 }
 
 .spider--form .input-bar {
   width: 100%;
   align-self: center;
-  border: px solid #000;
+  border: 1px solid #000;
   border-radius: 1.8em;
   background-color: var(--white);
 }
@@ -375,8 +376,23 @@ section.section-spider-form .spider--form {
   outline: 0;
   border: 0;
   text-indent: 0.6em;
-  font-size: var(--fs-texte);
+  font-size: 12px;
   font-weight: var(--fw-bold);
+}
+
+.btn--form {
+  position: relative;
+  z-index: 1;
+  top: -6em;
+  left: 12em;
+  background-color: transparent;
+  font-size: var(--fs-texte);
+  padding: 0.6em 3em;
+  color: var(--white);
+  border: 1px solid #fff;
+  border-radius: 1.8em;
+  cursor: pointer;
+  outline: none;
 }
 
 /* 
