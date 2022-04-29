@@ -263,11 +263,16 @@
              
          </div>
          <p class="footer-copyright">© SaynaXMarvel, Inc. 2022. We love our users!</p>
-        <div class="footer-audio">
-            <audio controls  class="footer-audio" autoplay loop>
+        <div class="footer-audio" >
+            <audio   id="audio" controls autoplay loop>
                 <source src="./audio/audio1.mp3" type="audio/mp3">
               </audio>
         </div>
     </footer>
+    <script type="text/javascript">
+      window.onload = function(){
+    document.getElementById("audio").play();
+      }
+      </script> 
   </body>
 </html>
