@@ -706,6 +706,22 @@ footer .details-container {
   opacity: 0.6;
 }
 
+.footer-audio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.footer-audio > audio {
+  width: 150px;
+  height: 25px;
+}
+
+audio::-webkit-media-controls-enclosure {
+  background-color: var(--red);
+}
+
 /*
   ===================
       FOOTER
@@ -746,5 +762,10 @@ footer .details-container {
 
   .footer-copyright {
     font-size: var(--fs-texte);
+  }
+
+  .footer-audio > audio {
+    width: 250px;
+    height: 30px;
   }
 }
