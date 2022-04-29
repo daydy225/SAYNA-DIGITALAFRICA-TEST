@@ -5,4 +5,10 @@
 
 ## VERSION MOBILE
 
-<img src="./sayna-test-spiderman-mb.png" width="600" />
+<img src="./sayna-test-spiderman-mb.png" width="400" />
+<img src="./sayna-test-spiderman-mb2.png" width="400" />
+
+## VERSION DESKTOP
+
+<img src="./sayna-test-spiderman.png" width="800" />
+<img src="./sayna-test-spiderman2.png" width="800" />
